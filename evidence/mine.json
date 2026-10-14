@@ -1,0 +1,88 @@
+{
+ "file": "hazard.json",
+ "hazards": [
+  {
+   "x": 215.0,
+   "side": "S",
+   "v": 1.5,
+   "t0": 0.0,
+   "trig": 24.0,
+   "type": "ped"
+  }
+ ],
+ "space": {
+  "h0_x": [
+   190.0,
+   240.0
+  ],
+  "h0_v": [
+   1.1,
+   1.8
+  ],
+  "h0_trig": [
+   18.0,
+   32.0
+  ]
+ },
+ "world": "town",
+ "exposure": 0.04,
+ "why": "Người đi bộ bất ngờ băng ngang đường ngoài vạch kẻ (jaywalking) từ lề phải sang lề trái. Theo nghiên cứu lái xe tự nhiên SHRP 2 NDS và thống kê NHTSA, người đi bộ cắt ngang ngoài giao lộ xảy ra khoảng 0.04 lần/chuyến đi đô thị (~1 lần mỗi 25 chuyến). Vận tốc đi bộ dao động 1.1 - 1.8 m/s (trung bình 1.4 m/s theo Manual on Uniform Traffic Studies). Cự ly kích hoạt 18 - 32 m khi xe tiến đến ở tốc độ ~12 m/s đặt planner vào vùng phản xạ gấp (TTC 1.5 - 2.5 s) mà không có vạch sang đường báo trước.",
+ "exact": {
+  "planner": []
+ },
+ "infeasible": 6,
+ "accepted": 0.996,
+ "conditional_on": "your town's traffic",
+ "baseline": {
+  "n": 1494,
+  "crashes": 0,
+  "avoidable": 0,
+  "unavoidable": 0,
+  "unattributed": 0,
+  "low_speed": 0,
+  "avoidable_foreknown": 0,
+  "overlap_at_start": 0,
+  "by_hazard": {},
+  "examples": [],
+  "p": 0.0,
+  "lo": 0.0,
+  "hi": 0.002564757181266697,
+  "per_trip": 0.0,
+  "per_trip_hi": 0.00010259028725066788
+ },
+ "chosen": {
+  "n": 1494,
+  "crashes": 0,
+  "avoidable": 0,
+  "unavoidable": 0,
+  "unattributed": 0,
+  "low_speed": 0,
+  "avoidable_foreknown": 0,
+  "overlap_at_start": 0,
+  "by_hazard": {},
+  "examples": [],
+  "p": 0.0,
+  "lo": 0.0,
+  "hi": 0.002564757181266697,
+  "per_trip": 0.0,
+  "per_trip_hi": 0.00010259028725066788
+ },
+ "_run": {
+  "mssv": "2202602615",
+  "town": "D",
+  "quick": false,
+  "step": "all",
+  "salted": false,
+  "budgets": {
+   "replay_n": 400,
+   "mc_n": 3000,
+   "iters": 8,
+   "per_iter": 300,
+   "final_n": 600,
+   "seeds": 3,
+   "fix_n": 400,
+   "progress_n": 256,
+   "mine_n": 1500
+  }
+ }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "avsim-studio/1",
+  "params": {
+    "cutT0": 5.0,
+    "cutDur": 2.4,
+    "cutV": 15.0,
+    "pedT0": 9.6,
+    "pedV": 1.45,
+    "busGo": 17.5,
+    "cutDs": -4.0,
+    "tgT": 0.9,
+    "mu": 0.8,
+    "cutBrake": 0.0,
+    "pedLook": 0,
+    "civil": false
+  },
+  "policy": {
+    "v0": 12.5,
+    "T": 1.6,
+    "a": 1.4,
+    "b": 2.0,
+    "s0": 2.5,
+    "cautionV": 7.5,
+    "cautionRange": 55.0,
+    "pedBuffer": 2.5,
+    "cutinLat": 2.15
+  },
+  "hazards": [
+    {
+      "type": "ped",
+      "x": 215.0,
+      "side": "S",
+      "v": 1.5,
+      "t0": 0.0,
+      "trig": 24.0
+    }
+  ],
+  "space": {
+    "h0_x": [190.0, 240.0],
+    "h0_v": [1.1, 1.8],
+    "h0_trig": [18.0, 32.0]
+  },
+  "exposure": 0.04,
+  "why": "Người đi bộ bất ngờ băng ngang đường ngoài vạch kẻ (jaywalking) từ lề phải sang lề trái. Theo nghiên cứu lái xe tự nhiên SHRP 2 NDS và thống kê NHTSA, người đi bộ cắt ngang ngoài giao lộ xảy ra khoảng 0.04 lần/chuyến đi đô thị (~1 lần mỗi 25 chuyến). Vận tốc đi bộ dao động 1.1 - 1.8 m/s (trung bình 1.4 m/s theo Manual on Uniform Traffic Studies). Cự ly kích hoạt 18 - 32 m khi xe tiến đến ở tốc độ ~12 m/s đặt planner vào vùng phản xạ gấp (TTC 1.5 - 2.5 s) mà không có vạch sang đường báo trước."
+}
